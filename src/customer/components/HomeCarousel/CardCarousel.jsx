@@ -18,20 +18,25 @@ const items = [
   <div className="item" data-value="3">
     3
   </div>,
-  <div className="item" data-value="4">
-    4
-  </div>,
-  <div className="item" data-value="5">
-    5
-  </div>,
 ];
 
 const CardCarousel = () => (
   <AliceCarousel
-    mouseTracking
+    // mouseTracking
+    // items={items}
+    // responsive={responsive}
+    // controlsStrategy="alternate"
+    autoPlay
+    // autoPlayControls
+    autoPlayStrategy="none"
+    autoPlayInterval={1000}
+    animationDuration={1000}
+    animationType="fadeout"
+    infinite
+    touchTracking={false}
+    disableDotsControls
+    disableButtonsControls
     items={items}
-    responsive={responsive}
-    controlsStrategy="alternate"
   />
 );
 
